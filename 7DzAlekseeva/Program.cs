@@ -23,13 +23,25 @@
             //account.PrintBalance();
 
             //3
-            Car car = new Car("Tesla Model S", 250);
+            //Car car = new Car("Tesla Model S", 250);
 
-            car.Accelerate(120);
-            Console.WriteLine($"Модель: {car.Model}, Текущая скорость: {car.Speed} км/ч");
+            //car.Accelerate(120);
+            //Console.WriteLine($"Модель: {car.Model}, Текущая скорость: {car.Speed} км/ч");
 
-            car.Brake();
-            Console.WriteLine($"После торможения: {car.Speed} км/ч");
+            //car.Brake();
+            //Console.WriteLine($"После торможения: {car.Speed} км/ч");
+
+            //4
+            Dice1 dice6 = new Dice1();
+            Dice1 dice12 = new Dice1(12);
+
+            Console.Write("6-гранный кубик: ");
+            Console.Write($"{dice6.Roll()}, {dice6.Roll()}, {dice6.Roll()}");
+
+            Console.WriteLine();
+
+            Console.Write("12-гранный кубик: ");
+            Console.Write($"{dice12.Roll()}, {dice12.Roll()}, {dice12.Roll()}");
         }
     }
 }
