@@ -32,16 +32,25 @@
             //Console.WriteLine($"После торможения: {car.Speed} км/ч");
 
             //4
-            Dice1 dice6 = new Dice1();
-            Dice1 dice12 = new Dice1(12);
+            //Dice1 dice6 = new Dice1();
+            //Dice1 dice12 = new Dice1(12);
 
-            Console.Write("6-гранный кубик: ");
-            Console.Write($"{dice6.Roll()}, {dice6.Roll()}, {dice6.Roll()}");
+            //Console.Write("6-гранный кубик: ");
+            //Console.Write($"{dice6.Roll()}, {dice6.Roll()}, {dice6.Roll()}");
 
-            Console.WriteLine();
+            //Console.WriteLine();
 
-            Console.Write("12-гранный кубик: ");
-            Console.Write($"{dice12.Roll()}, {dice12.Roll()}, {dice12.Roll()}");
+            //Console.Write("12-гранный кубик: ");
+            //Console.Write($"{dice12.Roll()}, {dice12.Roll()}, {dice12.Roll()}");
+
+            //5
+            Character warrior = new Character("Воин", 100, 20);
+            Character mage = new Character("Маг", 60, 100);
+            Character archer = new Character("Лучник", 80, 50);
+
+            warrior.Attack();
+            mage.Attack();
+            archer.Attack();
         }
     }
 }
